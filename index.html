@@ -1,110 +1,403 @@
-
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sagra Finish Carpentry & Remodel — Cabinet Refacing & Remodeling</title>
-  <meta name="description" content="Cabinet refacing, refinishing, and remodel services by Sagra Finish Carpentry & Remodel. Request a free in‑home estimate today." />
+  <meta name="description"
+    content="Cabinet refacing, refinishing, and remodel services by Sagra Finish Carpentry & Remodel. Request a free in‑home estimate today." />
   <link rel="canonical" href="https://example.com/" />
   <meta property="og:title" content="Sagra Finish Carpentry & Remodel — Cabinet Refacing & Remodeling" />
-  <meta property="og:description" content="Trusted cabinet transformations and remodeling. Get your free, in‑home quote today." />
+  <meta property="og:description"
+    content="Trusted cabinet transformations and remodeling. Get your free, in‑home quote today." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://example.com/" />
   <meta name="theme-color" content="#0f172a" />
   <style>
-    :root{
-      --bg:#0b1020;           /* deep slate */
-      --ink:#0f172a;          /* slate-900 */
-      --ink-2:#1f2937;        /* slate-800 */
-      --muted:#6b7280;        /* slate-500 */
-      --card:#ffffff;         /* white */
-      --brand:#0ea5e9;        /* sky-500 */
-      --brand-2:#0284c7;      /* sky-600 */
-      --accent:#22c55e;       /* green-500 */
-      --warn:#f59e0b;         /* amber-500 */
-      --max:1200px;
-      --radius:16px;
-      --shadow:0 10px 30px rgba(2,8,23,.12);
+    :root {
+      --bg: #0b1020;
+      /* deep slate */
+      --ink: #0f172a;
+      /* slate-900 */
+      --ink-2: #1f2937;
+      /* slate-800 */
+      --muted: #6b7280;
+      /* slate-500 */
+      --card: #ffffff;
+      /* white */
+      --brand: #0ea5e9;
+      /* sky-500 */
+      --brand-2: #0284c7;
+      /* sky-600 */
+      --accent: #22c55e;
+      /* green-500 */
+      --warn: #f59e0b;
+      /* amber-500 */
+      --max: 1200px;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(2, 8, 23, .12);
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; color:var(--ink); background:#f8fafc}
-    img{max-width:100%; display:block}
-    a{color:var(--brand); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:var(--max); margin-inline:auto; padding:24px}
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+      background: #f8fafc
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none
+    }
+
+    a:hover {
+      text-decoration: underline
+    }
+
+    .container {
+      max-width: var(--max);
+      margin-inline: auto;
+      padding: 24px
+    }
 
     /* Header */
-    header{position:sticky; top:0; z-index:20; background:rgba(255,255,255,.9); backdrop-filter: blur(8px); border-bottom:1px solid #e5e7eb}
-    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
-    .logo{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.3px}
-    .logo-badge{width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg,var(--brand),var(--brand-2)); display:grid; place-items:center; color:white; font-weight:700}
-    .nav-cta{display:flex; gap:10px; align-items:center}
-    .btn{appearance:none; border:0; padding:12px 18px; border-radius:10px; font-weight:700; cursor:pointer; transition:transform .06s ease, box-shadow .2s ease}
-    .btn:active{transform:translateY(1px)}
-    .btn.primary{background:var(--brand); color:white; box-shadow:0 8px 18px rgba(2,132,199,.25)}
-    .btn.primary:hover{background:var(--brand-2)}
-    .btn.outline{background:#fff; color:var(--ink); border:1px solid #e5e7eb}
-    .tel{font-weight:800; color:var(--ink)}
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, .9);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #e5e7eb
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: .3px
+    }
+
+    .logo-badge {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-weight: 700
+    }
+
+    .nav-cta {
+      display: flex;
+      gap: 10px;
+      align-items: center
+    }
+
+    .btn {
+      appearance: none;
+      border: 0;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .06s ease, box-shadow .2s ease
+    }
+
+    .btn:active {
+      transform: translateY(1px)
+    }
+
+    .btn.primary {
+      background: var(--brand);
+      color: white;
+      box-shadow: 0 8px 18px rgba(2, 132, 199, .25)
+    }
+
+    .btn.primary:hover {
+      background: var(--brand-2)
+    }
+
+    .btn.outline {
+      background: #fff;
+      color: var(--ink);
+      border: 1px solid #e5e7eb
+    }
+
+    .tel {
+      font-weight: 800;
+      color: var(--ink)
+    }
 
     /* Hero */
-    .hero{padding:56px 0; background:linear-gradient(180deg,#ffffff, #eef6fb)}
-    .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:32px}
-    @media (max-width: 900px){.hero-grid{grid-template-columns:1fr}}
-    .kicker{color:var(--brand-2); font-weight:800; text-transform:uppercase; letter-spacing:.1em; font-size:.85rem}
-    h1{font-size: clamp(28px, 4.6vw, 48px); line-height:1.1; margin:8px 0 12px}
-    .lead{font-size: clamp(16px, 2.2vw, 18px); color:var(--ink-2)}
-    .hero-card{background:var(--card); border:1px solid #e5e7eb; border-radius:var(--radius); padding:22px; box-shadow:var(--shadow)}
-    .form-row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
-    .form-row.full{grid-template-columns:1fr}
-    label{font-weight:700; font-size:.9rem}
-    input,select,textarea{width:100%; padding:12px 14px; border:1px solid #d1d5db; border-radius:10px; font:inherit; background:#fff}
-    .helper{font-size:.85rem; color:var(--muted)}
+    .hero {
+      padding: 56px 0;
+      background: linear-gradient(180deg, #ffffff, #eef6fb)
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 32px
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .kicker {
+      color: var(--brand-2);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: .85rem
+    }
+
+    h1 {
+      font-size: clamp(28px, 4.6vw, 48px);
+      line-height: 1.1;
+      margin: 8px 0 12px
+    }
+
+    .lead {
+      font-size: clamp(16px, 2.2vw, 18px);
+      color: var(--ink-2)
+    }
+
+    .hero-card {
+      background: var(--card);
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow)
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px
+    }
+
+    .form-row.full {
+      grid-template-columns: 1fr
+    }
+
+    label {
+      font-weight: 700;
+      font-size: .9rem
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      font: inherit;
+      background: #fff
+    }
+
+    .helper {
+      font-size: .85rem;
+      color: var(--muted)
+    }
 
     /* Trust bar */
-    .trust{padding:14px 0; background:#fff; border-top:1px solid #e5e7eb; border-bottom:1px solid #e5e7eb}
-    .trust-grid{display:grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap:12px; align-items:center}
-    @media (max-width: 800px){.trust-grid{grid-template-columns: repeat(2, 1fr)}}
-    .trust-item{display:flex; align-items:center; gap:10px; background:#f1f5f9; border:1px solid #e5e7eb; border-radius:12px; padding:12px 14px}
-    .trust-item strong{font-weight:800}
+    .trust {
+      padding: 14px 0;
+      background: #fff;
+      border-top: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e5e7eb
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      align-items: center
+    }
+
+    @media (max-width: 800px) {
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f1f5f9;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px 14px
+    }
+
+    .trust-item strong {
+      font-weight: 800
+    }
 
     /* Sections */
-    section{padding:56px 0}
-    .section-title{font-size: clamp(22px, 3.4vw, 36px); margin:0 0 12px}
-    .muted{color:var(--muted)}
+    section {
+      padding: 56px 0
+    }
+
+    .section-title {
+      font-size: clamp(22px, 3.4vw, 36px);
+      margin: 0 0 12px
+    }
+
+    .muted {
+      color: var(--muted)
+    }
 
     /* Services grid */
-    .grid{display:grid; grid-template-columns: repeat(3, 1fr); gap:18px}
-    @media (max-width: 1000px){.grid{grid-template-columns: repeat(2, 1fr)}}
-    @media (max-width: 680px){.grid{grid-template-columns: 1fr}}
-    .card{background:#fff; border:1px solid #e5e7eb; border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden}
-    .card > .pad{padding:18px}
-    .eyebrow{font-weight:800; text-transform:uppercase; letter-spacing:.1em; font-size:.8rem; color:var(--brand-2)}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px
+    }
+
+    @media (max-width: 1000px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media (max-width: 680px) {
+      .grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden
+    }
+
+    .card>.pad {
+      padding: 18px
+    }
+
+    .eyebrow {
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: .8rem;
+      color: var(--brand-2)
+    }
 
     /* Process */
-    .process{display:grid; grid-template-columns:repeat(3, 1fr); gap:18px}
-    @media (max-width: 900px){.process{grid-template-columns:1fr}}
-    .step{display:flex; gap:12px; align-items:flex-start; background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px}
-    .step-num{width:36px; height:36px; border-radius:10px; background:var(--ink); color:#fff; font-weight:800; display:grid; place-items:center}
+    .process {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px
+    }
+
+    @media (max-width: 900px) {
+      .process {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .step {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 16px
+    }
+
+    .step-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--ink);
+      color: #fff;
+      font-weight: 800;
+      display: grid;
+      place-items: center
+    }
 
     /* FAQ */
-    .faq{max-width:900px}
-    details{background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:16px 18px; box-shadow:var(--shadow)}
-    details+details{margin-top:12px}
-    summary{cursor:pointer; font-weight:800}
+    .faq {
+      max-width: 900px
+    }
+
+    details {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow)
+    }
+
+    details+details {
+      margin-top: 12px
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800
+    }
 
     /* Footer */
-    footer{padding:42px 0; background:#0b1020; color:#cbd5e1}
-    footer a{color:#93c5fd}
-    .subtle{font-size:.9rem; color:#94a3b8}
+    footer {
+      padding: 42px 0;
+      background: #0b1020;
+      color: #cbd5e1
+    }
+
+    footer a {
+      color: #93c5fd
+    }
+
+    .subtle {
+      font-size: .9rem;
+      color: #94a3b8
+    }
   </style>
 </head>
+
 <body>
   <!-- Header / Navigation -->
   <header>
     <div class="container nav" role="navigation" aria-label="Primary">
       <div class="logo">
-        <div class="logo-badge" aria-hidden="true">SF</div>
+       <img 
+  src="image/sagralogo.png"
+  srcset="image/sagralogo.png 1x, image/sagralogo.png 2x"
+  height="60"
+  class="logo-img"
+  alt="Sagra Finish Carpentry & Remodel" />
         <div>
           <div style="font-size:1.05rem">Sagra Finish Carpentry & Remodel</div>
           <div class="subtle" style="margin-top:2px">Glendale, AZ • Licensed • Bonded • Insured</div>
@@ -124,7 +417,8 @@
       <div>
         <div class="kicker">Cabinet Refacing • Refinishing • Carpentry</div>
         <h1>Bring your kitchen to life with flawless cabinet transformations</h1>
-        <p class="lead">We specialize in cabinet refacing, refinishing, and custom carpentry—delivered with precise craftsmanship and on‑time service. Book a free in‑home estimate today.</p>
+        <p class="lead">We specialize in cabinet refacing, refinishing, and custom carpentry—delivered with precise
+          craftsmanship and on‑time service. Book a free in‑home estimate today.</p>
         <div style="display:flex; gap:12px; margin-top:18px">
           <a class="btn primary" href="#quote">Get My Free Estimate</a>
           <a class="btn outline" href="#services">See Services</a>
@@ -164,7 +458,8 @@
           <div class="form-row full">
             <div>
               <label for="msg">Tell us about your project</label>
-              <textarea id="msg" name="message" rows="4" placeholder="Cabinet refacing with shaker doors, soft‑close hardware, etc."></textarea>
+              <textarea id="msg" name="message" rows="4"
+                placeholder="Cabinet refacing with shaker doors, soft‑close hardware, etc."></textarea>
             </div>
           </div>
           <button class="btn primary" style="width:100%; margin-top:10px">Request My Quote</button>
@@ -175,67 +470,67 @@
   </div>
 
   <!-- Trust bar -->
-<div class="trust" role="region" aria-label="Trust & highlights">
-  <div class="container trust-grid">
+  <div class="trust" role="region" aria-label="Trust & highlights">
+    <div class="container trust-grid">
 
-    <!-- BBB Seal -->
-    <div class="trust-item bbb-seal" title="Better Business Bureau">
-      <a href="https://www.bbb.org/us/az/glendale/profile/general-contractor/sagra-finish-carpentry-remodel-llc-1126-1000109936" 
-         target="_blank" 
-         rel="noopener">
-       <img src="images/BBB.png" alt="BBB Accredited Business" />
-      </a>
-      <div>
-        <strong>A+ rating</strong><br>
-        <a href="https://www.bbb.org/us/az/glendale/profile/general-contractor/sagra-finish-carpentry-remodel-llc-1126-1000109936" 
-           target="_blank" 
-           rel="noopener">Verified on BBB</a>
+      <!-- BBB Seal -->
+      <div class="trust-item bbb-seal" title="Better Business Bureau">
+        <a href="https://www.bbb.org/us/az/glendale/profile/general-contractor/sagra-finish-carpentry-remodel-llc-1126-1000109936"
+          target="_blank" rel="noopener">
+          <img src="image/BBB.png" alt="BBB Accredited Business" />
+        </a>
+        <div>
+          <strong>A+ rating</strong><br>
+          <a href="https://www.bbb.org/us/az/glendale/profile/general-contractor/sagra-finish-carpentry-remodel-llc-1126-1000109936"
+            target="_blank" rel="noopener">Verified on BBB</a>
+        </div>
       </div>
-    </div>
 
-    <!-- Local Business -->
-    <div class="trust-item">
-      <div class="logo-badge" aria-hidden="true">AZ</div>
-      <div>
-        <strong>Glendale-based</strong><br>
-        Serving Phoenix West Valley
+      <!-- Local Business -->
+      <div class="trust-item">
+        <div class="logo-badge" aria-hidden="true">AZ</div>
+        <div>
+          <strong>Glendale-based</strong><br>
+          Serving Phoenix West Valley
+        </div>
       </div>
-    </div>
 
-    <!-- Years in Business -->
-    <div class="trust-item">
-      <div class="logo-badge" aria-hidden="true">Yrs</div>
-      <div>
-        <strong>8+ years</strong><br>
-        In business
+      <!-- Years in Business -->
+      <div class="trust-item">
+        <div class="logo-badge" aria-hidden="true">Yrs</div>
+        <div>
+          <strong>18+ years</strong><br>
+          In business
+        </div>
       </div>
-    </div>
 
-    <!-- 5-Star Service -->
-    <div class="trust-item">
-      <div class="logo-badge" aria-hidden="true">★</div>
-      <div>
-        <strong>5-star service</strong><br>
-        Local, bonded & insured
+      <!-- 5-Star Service -->
+      <div class="trust-item">
+        <div class="logo-badge" aria-hidden="true">★</div>
+        <div>
+          <strong>5-star service</strong><br>
+          Local, bonded & insured
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
-</div>
 
 
   <!-- Services -->
   <section id="services">
     <div class="container">
       <h2 class="section-title">Specialties we’re known for</h2>
-      <p class="muted">Cabinet transformations are our core. We also handle select remodel work to complete your space.</p>
+      <p class="muted">Cabinet transformations are our core. We also handle select remodel work to complete your space.
+      </p>
       <div class="grid" style="margin-top:16px">
         <article class="card">
           <img src="assets/img/placeholder-1.jpg" alt="Cabinet refacing with new shaker doors" />
           <div class="pad">
             <div class="eyebrow">Cabinet Refacing</div>
             <h3 style="margin:.25rem 0 0">New doors, veneers & hardware</h3>
-            <p class="muted">Upgrade to modern styles without a full tear‑out. Save time and cost while getting a like‑new kitchen.</p>
+            <p class="muted">Upgrade to modern styles without a full tear‑out. Save time and cost while getting a
+              like‑new kitchen.</p>
           </div>
         </article>
         <article class="card">
@@ -274,7 +569,8 @@
           <div class="step-num">2</div>
           <div>
             <h3 style="margin:4px 0">Refacing / refinishing</h3>
-            <p class="muted">Doors are removed, surfaces repaired, sanded, veneered or refinished, then sprayed for a factory look.</p>
+            <p class="muted">Doors are removed, surfaces repaired, sanded, veneered or refinished, then sprayed for a
+              factory look.</p>
           </div>
         </div>
         <div class="step">
@@ -292,11 +588,18 @@
   <section id="gallery">
     <div class="container">
       <h2 class="section-title">Before & after gallery</h2>
-      <p class="muted">Replace the images below with your project photos (add files to <code>assets/img/</code> and update the <code>src</code> paths).</p>
+      <p class="muted">Replace the images below with your project photos (add files to <code>assets/img/</code> and
+        update the <code>src</code> paths).</p>
       <div class="grid" style="margin-top:16px">
-        <figure class="card"><img src="assets/img/placeholder-4.jpg" alt="Before and after — white shaker cabinets" /><figcaption class="pad muted">White shaker upgrade with soft‑close drawers</figcaption></figure>
-        <figure class="card"><img src="assets/img/placeholder-5.jpg" alt="Walnut veneer refacing" /><figcaption class="pad muted">Walnut veneer refacing & new hardware</figcaption></figure>
-        <figure class="card"><img src="assets/img/placeholder-6.jpg" alt="Two‑tone island and perimeter" /><figcaption class="pad muted">Two‑tone island + perimeter paint</figcaption></figure>
+        <figure class="card"><img src="assets/img/placeholder-4.jpg" alt="Before and after — white shaker cabinets" />
+          <figcaption class="pad muted">White shaker upgrade with soft‑close drawers</figcaption>
+        </figure>
+        <figure class="card"><img src="assets/img/placeholder-5.jpg" alt="Walnut veneer refacing" />
+          <figcaption class="pad muted">Walnut veneer refacing & new hardware</figcaption>
+        </figure>
+        <figure class="card"><img src="assets/img/placeholder-6.jpg" alt="Two‑tone island and perimeter" />
+          <figcaption class="pad muted">Two‑tone island + perimeter paint</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -306,9 +609,24 @@
     <div class="container">
       <h2 class="section-title">What homeowners say</h2>
       <div class="grid" style="margin-top:16px">
-        <article class="card"><div class="pad"><p>“The process was on time and the finish is flawless. Our kitchen looks brand new.”</p><p class="subtle">— M.W., Glendale</p></div></article>
-        <article class="card"><div class="pad"><p>“Professional, tidy, and the soft‑close drawers are a game changer.”</p><p class="subtle">— B.W., Phoenix</p></div></article>
-        <article class="card"><div class="pad"><p>“Clear communication and beautiful workmanship. Highly recommend.”</p><p class="subtle">— R.G., Peoria</p></div></article>
+        <article class="card">
+          <div class="pad">
+            <p>“The process was on time and the finish is flawless. Our kitchen looks brand new.”</p>
+            <p class="subtle">— M.W., Glendale</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <p>“Professional, tidy, and the soft‑close drawers are a game changer.”</p>
+            <p class="subtle">— B.W., Phoenix</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <p>“Clear communication and beautiful workmanship. Highly recommend.”</p>
+            <p class="subtle">— R.G., Peoria</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -319,11 +637,13 @@
       <h2 class="section-title">Frequently asked questions</h2>
       <details>
         <summary>How long does refacing usually take?</summary>
-        <p class="muted">Typical projects complete in about 3–5 days depending on scope, number of doors/drawers, and any layout changes.</p>
+        <p class="muted">Typical projects complete in about 3–5 days depending on scope, number of doors/drawers, and
+          any layout changes.</p>
       </details>
       <details>
         <summary>Do you offer warranties?</summary>
-        <p class="muted">Yes. We provide a workmanship and finish warranty; details are included with your written estimate.</p>
+        <p class="muted">Yes. We provide a workmanship and finish warranty; details are included with your written
+          estimate.</p>
       </details>
       <details>
         <summary>Can you match my existing color or wood tone?</summary>
@@ -331,7 +651,8 @@
       </details>
       <details>
         <summary>Are you licensed, bonded, and insured?</summary>
-        <p class="muted">Yes, and we’re happy to provide documentation with your estimate. We recommend verifying any contractor at the AZ Registrar of Contractors.</p>
+        <p class="muted">Yes, and we’re happy to provide documentation with your estimate. We recommend verifying any
+          contractor at the AZ Registrar of Contractors.</p>
       </details>
     </div>
   </section>
@@ -342,7 +663,8 @@
       <div class="card" style="display:grid; grid-template-columns:1fr 1fr; gap:16px">
         <div class="pad">
           <h2 class="section-title" style="margin-top:0">Ready to transform your cabinets?</h2>
-          <p class="muted">Call <a href="tel:+1-602-555-0123">(602) 555‑0123</a> or request your in‑home quote. We serve Glendale, Peoria, Surprise and nearby areas.</p>
+          <p class="muted">Call <a href="tel:+1-602-555-0123">(602) 555‑0123</a> or request your in‑home quote. We serve
+            Glendale, Peoria, Surprise and nearby areas.</p>
           <ul class="muted">
             <li>BBB A+ rating</li>
             <li>Local, family‑owned</li>
@@ -357,7 +679,8 @@
             <label for="c-email">Email</label>
             <input id="c-email" type="email" required />
             <label for="c-msg" style="margin-top:8px">Message</label>
-            <textarea id="c-msg" rows="4" placeholder="I’d like to reface our kitchen with shaker doors…" required></textarea>
+            <textarea id="c-msg" rows="4" placeholder="I’d like to reface our kitchen with shaker doors…"
+              required></textarea>
             <button class="btn primary" style="margin-top:10px">Send</button>
             <p id="contact-status" class="helper" role="status" style="margin-top:8px"></p>
           </form>
@@ -374,9 +697,11 @@
           <div class="logo-badge">SF</div>
           <strong>Sagra Finish Carpentry & Remodel</strong>
         </div>
-        <p class="subtle">Proudly serving Glendale, AZ and surrounding areas. <br> Verify our BBB profile and contractor credentials before you hire any contractor.</p>
+        <p class="subtle">Proudly serving Glendale, AZ and surrounding areas. <br> Verify our BBB profile and contractor
+          credentials before you hire any contractor.</p>
         <p>
-          <a href="https://www.bbb.org/us/az/glendale/profile/general-contractor/sagra-finish-carpentry-remodel-llc-1126-1000109936" target="_blank" rel="noopener">View BBB Profile →</a>
+          <a href="https://www.bbb.org/us/az/glendale/profile/general-contractor/sagra-finish-carpentry-remodel-llc-1126-1000109936"
+            target="_blank" rel="noopener">View BBB Profile →</a>
         </p>
         <p class="subtle">© <span id="year"></span> Sagra Finish Carpentry & Remodel. All rights reserved.</p>
       </div>
@@ -409,43 +734,44 @@
 
   <script>
     // ——— Minimal JS: form mocks + UX helpers (replace with real handlers/backend later)
-    const $ = (sel)=>document.querySelector(sel);
-    window.addEventListener('DOMContentLoaded', ()=>{
+    const $ = (sel) => document.querySelector(sel);
+    window.addEventListener('DOMContentLoaded', () => {
       // dynamic year
       $('#year').textContent = new Date().getFullYear();
     });
 
-    function handleQuoteSubmit(e){
+    function handleQuoteSubmit(e) {
       e.preventDefault();
-      const name=$('#name').value.trim();
-      const phone=$('#phone').value.trim();
-      const email=$('#email').value.trim();
-      if(!name||!phone||!email){
-        $('#form-status').textContent='Please complete all required fields.';
-        $('#form-status').style.color='#b91c1c';
+      const name = $('#name').value.trim();
+      const phone = $('#phone').value.trim();
+      const email = $('#email').value.trim();
+      if (!name || !phone || !email) {
+        $('#form-status').textContent = 'Please complete all required fields.';
+        $('#form-status').style.color = '#b91c1c';
         return false;
       }
       // TODO: Post to your backend (Netlify Forms, Formspree, custom API)
-      $('#form-status').textContent='Thanks! We\'ll be in touch shortly.';
-      $('#form-status').style.color='#16a34a';
+      $('#form-status').textContent = 'Thanks! We\'ll be in touch shortly.';
+      $('#form-status').style.color = '#16a34a';
       e.target.reset();
       return false;
     }
 
-    function handleContactSubmit(e){
+    function handleContactSubmit(e) {
       e.preventDefault();
-      const email=$('#c-email').value.trim();
-      const msg=$('#c-msg').value.trim();
-      if(!email||!msg){
-        $('#contact-status').textContent='Please fill out both fields.';
-        $('#contact-status').style.color='#b91c1c';
+      const email = $('#c-email').value.trim();
+      const msg = $('#c-msg').value.trim();
+      if (!email || !msg) {
+        $('#contact-status').textContent = 'Please fill out both fields.';
+        $('#contact-status').style.color = '#b91c1c';
         return false;
       }
-      $('#contact-status').textContent='Message sent — check your email for our reply.';
-      $('#contact-status').style.color='#16a34a';
+      $('#contact-status').textContent = 'Message sent — check your email for our reply.';
+      $('#contact-status').style.color = '#16a34a';
       e.target.reset();
       return false;
     }
   </script>
 </body>
+
 </html>

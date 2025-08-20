@@ -60,8 +60,8 @@
   /* === Header / Nav === */
   header{position:sticky; top:0; z-index:20; background:rgba(255,255,255,.9); backdrop-filter: blur(8px); border-bottom:1px solid #e5e7eb}
   .nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
-  .logo{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.3px}
-  .logo-badge{width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg,var(--brand),var(--brand-2)); display:grid; place-items:center; color:white; font-weight:700}
+  .logo-img { height: 60px; width: auto; display: block; } @media (max-width: 480px) { .logo-img { height: 32px; } }
+  .logo-badge { display: none; }
   .nav-cta{display:flex; gap:10px; align-items:center}
   
   /* === Hero === */
